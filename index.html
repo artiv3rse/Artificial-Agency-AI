@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artificial Agency AI</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #fdf6f0;
+            color: #5D4954;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            min-height: 8vh;
+            background-color: #f27649;
+            color: white;
+            padding: 2rem;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+            margin-left: 1rem;
+            transition: color 0.5s;
+        }
+
+        .navbar a:hover {
+            color: #fdf6f0;
+        }
+
+        .hero {
+    background-image: url('pool.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    padding: 50px 0;
+}
+
+.hero-content {
+    background-color: rgba(0, 0, 0, 0.5); /* This is to make the text more readable against the background image. Adjust the last number in rgba() to make the black overlay more or less transparent, as desired. */
+    padding: 20px;
+    max-width: 80%; /* Adjust as desired */
+    margin: auto;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    color: white; /* Adjust color as needed */
+}
+
+.hero p {
+    font-size: 1.2em;
+    color: white; /* Adjust color as needed */
+}
+
+
+        .section {
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .section h2 {
+            color: #5D4954;
+            font-size: 2em;
+            margin-bottom: 10px;
+            padding: 1rem;
+        }
+
+        .section p {
+            color: #5D4954;
+            font-size: 1.2em;
+            margin: 0 auto;
+            max-width: 600px;
+            text-align: justify;
+        }
+
+        .section img {
+            width: 100%;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-gap: 1rem;
+            padding: 1rem;
+        }
+
+        .grid-item {
+            background-color: #fdf6f0;
+            padding: 1rem;
+            border-radius: 15px;
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .grid-item:hover {
+            transform: scale(1.05);
+        }
+
+        .grid-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 15px;
+            margin-bottom: 1rem;
+        }
+
+        .grid-item h3 {
+            margin-bottom: 0.5rem;
+            color: #f27649;
+        }
+
+        .grid-item p {
+            margin-bottom: 0.5rem;
+        }
+
+        .grid-item button {
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 5px;
+            background-color: #f27649;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .grid-item button:hover {
+            background-color: #c86037;
+        }
+
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .contact-form label {
+            display: block;
+            font-size: 1.2em;
+            margin: 1rem 0;
+        }
+
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 1rem;
+            border: 1px solid #5D4954;
+            border-radius: 5px;
+        }
+
+        .contact-form button {
+            display: block;
+            width: 100%;
+            padding: 1rem;
+            border: none;
+            border-radius: 5px;
+            background-color: #f27649;
+            color: white;
+            cursor: pointer;
+            margin-top: 1rem;
+            transition: background-color 0.3s;
+        }
+
+        .contact-form button:hover {
+            background-color: #c86037;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#blog">Blog</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="home" class="hero">
+    <div class="hero-content">
+        <h1>Welcome to Artificial Agency AI</h1>
+        <p>Revolutionizing content creation with the power of Artificial Intelligence. We provide unique and high-quality AI-generated content at the fraction of the cost of traditional agencies.</p>
+    </div>
+</section>
+
+
+    <section id="about" class="section">
+        <h2>About Us</h2>
+        <div class="grid-container">
+            <div class="grid-item">
+                <img src="image1girl.png" alt="Our Story">
+                <h3>Our Story</h3>
+                <p>Artificial Agency AI was founded with a mission to leverage the power of AI to create engaging content that captures the imagination of the audience. We believe that AI can unlock new possibilities in content creation, and we're here to bring these possibilities to you.</p>
+            </div>
+            <div class="grid-item">
+                <img src="eye1.png" alt="Our Vision">
+                <h3>Our Vision</h3>
+                <p>Our vision is to become the go-to solution for businesses looking for innovative, AI-generated content. We aim to provide high-quality content at lower prices, thanks to AI, while offering an engaging platform for our audience to interact with our AI creations.</p>
+            </div>
+            <div class="grid-item">
+                <img src="lobby.png" alt="Our Team">
+                <h3>Our Team</h3>
+                <p>Our team consists of dedicated professionals who are passionate about AI and creativity. We are committed to providing our customers with top-notch service and to uphold ethical AI practices.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="section">
+        <h2>Our Services</h2>
+        <div class="grid-container">
+            <div class="grid-item">
+                <img src="desk.png" alt="AI Content Creation">
+                <h3>AI Content Creation</h3>
+                <p>From blog posts to social media updates, our AI can generate unique, engaging content that captures the attention of your audience.</p>
+                <button>Learn More</button>
+            </div>
+            <div class="grid-item">
+                <img src="pitch.png" alt="Startup Pitch Decks">
+                <h3>Startup Pitchdecks</h3>
+                <p>We provide consultation services to businesses interested in incorporating AI into their content creation strategy. Our experts will guide you through the process and provide you with the best solutions to meet your needs.</p>
+                <button>Learn More</button>
+            </div>
+            <div class="grid-item">
+                <img src="ad.png" alt="Ad Campaigns">
+                <h3>Ad Campaigns</h3>
+                <p>If you have a specific need that our existing AI solutions don't cover, we can develop a custom AI to meet your unique requirements.</p>
+                <button>Learn More</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="section">
+        <h2>Testimonials</h2>
+        <div class="grid-container">
+            <div class="grid-item">
+                <img src="testimonial1.png" alt="Testimonial 1">
+                <h3>"The best AI creative agency around"</h3>
+                <p>"Artificial Agency AI has been instrumental in our content creation strategy. Their AI-generated content is unique and engaging, and it has significantly reduced our content creation costs."</p>
+            </div>
+            <div class="grid-item">
+                <img src="testimonial2.png" alt="Testimonial 2">
+                <h3>"Unparalled customer service"</h3>
+                <p>"We are incredibly impressed with the quality of the AI-generated content from Artificial Agency AI. It's hard to believe that a machine wrote the content - it's that good!"</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="blog" class="section">
+        <h2>The More You Know</h2>
+        <div class="grid-container">
+            <div class="grid-item">
+                <img src="eyesblog.png" alt="Blog Post 1">
+                <h3>How AI is Changing Content Creation</h3>
+                <p>The era of AI-generated content is here, and it's changing the way businesses approach content creation. Read our blog post to learn more.</p>
+                <button>Read More</button>
+            </div>
+            <div class="grid-item">
+                <img src="biz.png" alt="Blog Post 2">
+                <h3>Why You Should Consider AI for Your Business</h3>
+                <p>If you're not using AI in your business yet, you're missing out. Discover why AI should be part of your business strategy in our latest blog post.</p>
+                <button>Read More</button>
+            </div>
+            <div class="grid-item">
+                <img src="blog3.png" alt="Blog Post 3">
+                <h3>Why Us?</h3>
+                <p>We can offer high quality services with dramatically lower pricing than competitors.</p>
+                <button>Read More</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <h2>Contact Us</h2>
+        <form class="contact-form">
+            <label for="name">Name</label>
+            <input type="text" id="name" required>
+            <label for="email">Email</label>
+            <input type="email" id="email" required>
+            <label for="message">Message</label>
+            <textarea id="message" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+</body>
+</html>
